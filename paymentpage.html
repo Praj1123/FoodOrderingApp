@@ -1,0 +1,143 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style>
+body {
+background-image:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+margin-bottom:40px;
+margin-top:40px;
+color:white;
+font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+button{
+border-radius:30px;
+border-color:white;
+color:white;
+}
+input {
+height:30px;
+}
+span{
+margin-left:10px;
+}
+</style> 
+ </head> 
+ <body> 
+  <center> 
+   <div> <button style="background-color:darkgreen;width:20%; height:40px" onclick="window.location ='index.html'"><b>Back</b></button><b> <h1>Pay Bill</h1> </b>
+   </div>
+  </center><b> 
+   <lable>
+    <b>Name :</b>
+   </lable><b> <input type="name" placeholder="Your sweet name..." style="margin-left:87px"><br><br> 
+    <lable>
+     <b>Table Number :</b>
+    </lable><b> <input type="text" placeholder="Ex:206..." style="margin-left:30px"> <h4>Mode of payment : </h4> 
+     <div id="myNav1" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a> 
+      <div class="overlay-content"> <lable>
+        <b>Enter your UPI-Id : </b>
+       </lable><b> <input type="text" placeholder="Ex.96383964738@paytm" style="margin-left:10px"> 
+        <center> <button type="submit" style="margin-top:20%;width:50%;height:50px;font-size:30px; background-color:green" onclick="window.location ='orderpage.html'"><b>Pay </b></button> 
+        </center> </b>
+      </div><b> </b>
+     </div><b> <span style="font-size:30px;cursor:pointer" onclick="openNav1()">☰ UPI</span> <br> 
+      <div id="myNav2" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a> 
+       <div class="overlay-content"> <lable>
+         Card Number:
+        </lable> 
+        <input type="number" placeholder="Ex.3637 3737 2829" style="margin-left:40px">
+        <br>
+        <br> <label>CVV Number: <input type="number" placeholder="Ex.447" style="margin-left:40px"> 
+         <center> <button type="submit" style="margin-top:20%;width:50%;height:50px;font-size:30px; background-color:green" onclick="window.location ='orderpage.html'"><b>Pay </b></button> 
+         </center> </label>
+       </div> 
+      </div> <span style="font-size:30px;cursor:pointer" onclick="openNav2()">☰ Credit/debit Card</span> <br> 
+      <div id="myNav3" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a> 
+       <div class="overlay-content"> 
+        <h1>Our waiter is waiting for your bill.</h1> 
+        <br>
+        <h2>Please pay.</h2>  
+      <button type="submit" style="width:40%; height:50px;background-color:darkgreen;color:white" onclick="window.location='orderpage.html'"><b>Next</b></button><b>
+       </b></div><b> 
+      </b></div><b> <span style="font-size:30px;cursor:pointer" onclick="openNav3()">☰ Cash <script>
+function openNav1() {
+  document.getElementById("myNav1").style.width = "100%";
+}
+
+function closeNav1() {
+  document.getElementById("myNav1").style.width = "0%";
+}
+
+/* Open when someone clicks on the span element */
+function openNav2() {
+  document.getElementById("myNav2").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav2() {
+  document.getElementById("myNav2").style.width = "0%";
+}
+
+function openNav3() {
+  document.getElementById("myNav3").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav3() {
+  document.getElementById("myNav3").style.width = "0%";
+}
+
+</script> </span></b></b></b></b>
+ 
+</b></body></html>

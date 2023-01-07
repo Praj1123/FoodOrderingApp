@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balaji Hotel, pulgaon</title>
+<style>
+#header{
+width:100%;
+height:auto;
+text-align: center;
+padding-top:20px;
+color:white;
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+table{
+border:2px solid white;
+margin-top:25px;
+text-align:center;
+font-size: 30px;
+}
+button{
+width:40%;
+height:70px;
+margin-top:40px;
+font-size:40px;
+border-radius:30px;
+border:5px solid #800026;
+}
+#yourOrder{
+margin-top:30px;
+}
+.vertical {
+      border-left: 6px solid blue;
+      height: 200px;
+      position:absolute;
+      left: 50%;}
+#image{
+    display:none;
+}
+table{
+    border-color: #800026;
+    height: 100px;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<b style="font-size:60px;">Balaji Hotel, Pulgaon </b></br>
+<b style="font-size: 30px">near bus stand on nachangaon road.<br/>
+<hr></hr>
+<div id="body">
+<b style="font-size:60px;">Menu</b>
+<center>
+<table>
+<thead style="border:2px solid white";>
+<tr>
+<th style="padding:25px;font-size:40px;">Food Code </th>
+<th style="padding:25px;font-size:40px;">Food</th>
+<th style="padding:25px;font-size:40px;">Price</th>
+<th style="padding:25px;font-size:40px;">Order</th>
+<th style="padding:25px;font-size:40px;">Plates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Burger</td>
+<td>100Rs</td>
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;color: #800026;" value="Burger" id="100" ></input>
+</td>
+ <td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>102</td>
+<td>Pizza</td>
+<td>150Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Pizza" id="150"></input></td>
+<td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+ 
+</tr>
+<tr>
+<td>103</td>
+<td>Sandwich</td>
+<td>100Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Sandwitch" id="100"></input>
+</td>
+<td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>104</td>
+<td>Panner tikka</td>
+<td>70Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Panner Tikka" id="70"></input>
+</td>
+ <td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>105</td>
+<td>Maggie</td>
+<td>30Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Maggie" id="30"></input>
+</td>
+ <td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>106</td>
+<td>sammosa</td>
+<td>34Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Sammosa" id=34"></input>
+</td>
+<td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr><tr>
+<td>107</td>
+<td>Iddli</td>
+<td>90Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Iddli" id="90"></input>
+</td>
+<td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>108</td>
+<td>Dosa</td>
+<td>70Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Dosa" id="70"></input>
+</td>
+ <td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>109</td>
+<td>Pastry</td>
+<td>45Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Pastry" id="45"></input>
+</td>
+ <td><input type="number" style="width:40px;height:35px;font-size: 35px" name="checka" min="1"></input></td>
+</tr>
+<tr>
+<td>110</td>
+<td>Mixture</td>
+<td>34Rs</td> 
+<td><input type="checkbox" name="check" style="width:40px;height: 40px;" value="Mixture" id="34Rs"></input>
+</td>
+<td><input type="number" style="width:40px;height:35px;font-size: 35px;" name="checka" min="1"></input></td>
+</tr>
+</tbody>
+</table>
+</center>
+<button type="text" onclick="order()"><b>Check</button>
+</div>
+<hr style="width:100%; height:5px; background-color:#800026"></hr>
+<center>
+<h1>Your Order</h1>
+<div id="yourOrderName" style="border:solid white;width:auto; height:auto;display:inline-block;font-size:30px;padding:9px; margin-right:20px;font-size: 30px;"><h style="font-size: 40px;"><u>Food</u></h><br/><br/></div>
+<div id="yourOrderPlates"style="border:solid white;width:auto; height:auto;display:inline-block;font-size:20px;padding:9px;margin-left:20px;font-size: 30px;"><h style="font-size: 40px;"><u>Plates</u></h><br/><br/></div>
+<div id="yourOrderPrice"style="border:solid white;width:auto; height:auto;display:inline-block;font-size:20px;padding:9px;margin-left:35px;font-size: 30px;"><h style="font-size: 40px;"><u>Price</u><br/><br/></div>
+<hr style="width:100%; height:5px; background-color:#800026;margin-top:50px"></hr>
+
+<div>
+    <img id="image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5ecd5fab-be8d-4409-bd84-4a3d205b9ec8/daehq7e-48b7f14a-14ff-4082-9e7c-aee710c9bbfd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVlY2Q1ZmFiLWJlOGQtNDQwOS1iZDg0LTRhM2QyMDViOWVjOFwvZGFlaHE3ZS00OGI3ZjE0YS0xNGZmLTQwODItOWU3Yy1hZWU3MTBjOWJiZmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GW_7jlunpf-1g4Dy3ppLR414Q_YBZ6MxF9QAVlbV4Ck" alt="Computer man" style="width:400px;height:200px;padding-top: 50px;padding-bottom: 50px;border-radius:50%;">
+</div>
+<button type="submit" id="conform" onclick="showImage();nextpage()" style="margin-bottom: 50px;"><b>Conform</b></button>
+</center>
+<script>
+function order() {
+    var price=0;
+  alert("This is your order summery. Please have a look....");
+  var price =[100,150,100,70,30,34,90,70,45,34];
+  var items =["Burger","Pizza","Sandwitch","Panner Tikka","Maggie","Sammosa","Iddli","Dosa","Pastry","Mixture"];
+  var checkboxes = document.getElementsByName("check");
+  var numberboxes = document.getElementsByName("checka"); 
+  var checkboxesChecked = [];
+  var getnumberboxes = [];
+  var getPrice = [];
+  for (var i=0; i<checkboxes.length; i++) {
+    
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push(checkboxes[i].value);
+        getnumberboxes.push(numberboxes[i].value);
+     }
+  }
+for(var i=0;i<getnumberboxes.length;i++){
+document.getElementById("yourOrderName").innerHTML+=checkboxesChecked[i]+"<br/>";
+
+var Get=checkboxesChecked[i];
+for(var k=0;k<items.length;k++){
+if(Get==items[k]){
+getPrice.push(price[k]);
+}
+}
+document.getElementById("yourOrderPlates").innerHTML+=getnumberboxes[i]+" "+"plates"+"</br>";
+document.getElementById("yourOrderPrice").innerHTML+=getPrice[i]*getnumberboxes[i]+"Rs"+"</br>";
+}
+}
+function showImage(){
+    document.getElementById('image').style.display= "block";
+    document.getElementById('conform').style.display = "none";
+}
+function nextpage(){
+var timeout= setTimeout(function(){
+window.location.href ="paymentpage.html";
+
+},3000);
+
+}
+</script>
+</body>
+</html>
